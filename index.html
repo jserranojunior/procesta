@@ -14,40 +14,77 @@
 
 <body>
     <header>
-        <nav class="navbar has-background-purple" role="navigation" aria-label="main navigation">
+
+        <div class="columns margin-top--1">
+            <div class="column is-3 has-background-purple "  >
+                <img src="./imagens/logo.png" alt="PRO CESTA BÁSICA" width="100%">
+            </div>
+            <div class="column">
+                <button class="btn-menu is-purple button is-rounded"> Quero ser agente <br>de negócios</button>
+                <button class="btn-menu is-purple button is-rounded"> Quero ser sócio <br>desta empresa</button>
+                <button class="btn-menu is-purple button is-rounded"> Quero falar com a <br>administração</button>
+                <button class="btn-menu is-purple button is-rounded"> Quero ser cliente</button>
+                <button class="btn-menu is-purple button is-rounded"> Já sou cliente</button>
+
+
+            </div>
+        </div>
+
+        <nav class="navbar is-purple" role="navigation" aria-label="main navigation">
             <div class="navbar-brand ">
-                <a class="navbar-item" href="https://bulma.io">
-                    <h1 class="has-text-white"><strong>PRO CESTA BÁSICA</strong></h1>
-                    <!-- <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28"> -->
-                </a>
-
-
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <a  onclick="navBarToggle()" role="button" class="navbar-burger is-purple is-active" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-small is-light">
-                            <strong>Cadastro</strong>
-                        </a>
-                        <a class="button is-small is-light">
-                            <strong>Login</strong>
-                        </a>
-                    </div>
+            <div class="navbar-menu is-active is-purple"">
+                <div class="navbar-start is-purple"">
+                    <a class="navbar-item is-purple strong">
+                        HOME
+                    </a>         
+                    <a class="navbar-item is-purple strong">
+                        CESTA DE MERCEARIA
+                    </a>  
+                    <a class="navbar-item is-purple strong">
+                        CESTA DE PRODUTOS DE LIMPEZA
+                    </a>  
+                    <a class="navbar-item is-purple strong">
+                        CESTA DE HIGIENE PESSOAL
+                    </a>  
+                    <a class="navbar-item is-purple strong">
+                        CESTA COMPLETA
+                    </a>       
+                
                 </div>
+            </div>
+            
+            
         </nav>
 
     </header>
     <section>
         <div class="container">
             <div class="columns">
-                <div class="column is-4">
+                <div class="column is-3">
                     <div class="card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered sub-title-cesta">
+                            <img src="./imagens/5.jpeg" alt="">
+                            ECONÔMICA - LIMPEZA
+                            <p>KIT - <strong> R$29,99 </strong></p>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="column is-centered has-text-centered">
+                                <button class="button has-text-white has-background-orange">
+                                    Adicionar ao carrinho
+                                </button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-content has-text-centered sub-title-cesta">
                             <img src="./imagens/1.jpeg" alt="">
                             ESSENCIAL - 1° LINHA
                             <p>28 Itens - <strong> R$99,99 </strong></p>
@@ -61,9 +98,9 @@
                         </footer>
                     </div>
                 </div>
-                <div class="column is-4">
+                <div class="column is-3">
                     <div class="card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered sub-title-cesta">
                             <img src="./imagens/2.jpeg" alt="">
                             ECONÔMICA - 1° LINHA
                             <p>12 Itens - <strong> R$49,99 </strong></p>
@@ -77,9 +114,9 @@
                         </footer>
                     </div>
                 </div>
-                <div class="column is-4">
+                <div class="column is-3">
                     <div class="card">
-                        <div class="card-content has-text-centered">
+                        <div class="card-content has-text-centered sub-title-cesta">
                             <img src="./imagens/3.jpeg" alt="">
                             PREMIUM FAMILIAR - 1° LINHA
                             <p>72 Itens - <strong> R$299,00 </strong></p>
@@ -100,34 +137,70 @@
 
     <footer>
         <div class="container">
-            <div class="columns">
-                <div class="column is-2">
-                    <figure>
-                        <img src="./imagens/4.jpeg" alt="">
-                    </figure>
+            <div class="columns is-vcentered">
+                <div class="column is-4 is-left has-text-centered">
+                    <div class="box">
+                        <h4 class="h4"><strong>Contato</strong></h4>
+                        <i class="fab fa-whatsapp has-text-success fa-2x"></i> (11)94844-1194
+                    </div> 
                 </div>
-                <div class="column is-5 has-text-centered">
-                    <h4 class="h4"><strong>Formas de pagamento</strong></h4>
+                
+                <div class="column is-4 has-text-centered">
+                    <div class="box">
+                        <h4 class="h4"><strong>Formas de pagamento</strong></h4>
                   
                     <img class="icon-pagamentos" src="./imagens/ppay-icon.png" alt="">                   
                     <img class="icon-pagamentos" src="./imagens/caixatem.jpg" alt="">  <br>  
                     
-                    <h4>Compre a sua e pague via aplicativo <br>
+                    <p>Compre a sua e pague via aplicativo <br>
                         <span class="has-text-link strong">CAIXA TEM</span> tem ou 
-                        aplicativo da <span class="has-text-success strong">PICPAY</span></h4>
+                        aplicativo da <span class="has-text-success strong">PICPAY</span></p>
               
-                </div>
-                <div class="column is-5s is-left has-text-centered">
-                    <div class="box">
-                        <h4 class="h4"><strong>Contato</strong></h4>
-                        <i class="fab fa-whatsapp has-text-success fa-2x"></i> (11)94844-1194
                     </div>
                 </div>
+
+                <div class="column is-4 is-left has-text-centered">
+                    <div class="box">
+                        <img src="./imagens/ajuda.jpeg" alt="">         
+                    </div>
+                </div>
+                
             </div>
         </div>
     </footer>
 
     <style>
+        .margin-top--1{
+            margin-top: -1rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        .strong{
+            font-weight: bold;
+        }
+        a.navbar-item:hover {
+            background-color: #fafafa;
+        }
+        .is-purple{
+            background-color: #520f6c! important;
+            color: white! important;
+            border-color: #dbdbdb00! important;
+        }
+        .is-purple:hover{
+            background-color: #77159d! important;
+            color: white! important;
+            border-color: #dbdbdb00! important;
+        }
+        .btn-menu{           
+            padding: 25px;       
+            font-weight: bold;  
+            font-size: 14px;   
+            margin-bottom: 2px;
+        }
+        .sub-title-cesta{
+            font-size: 0.7em! important;
+        }
         .strong{
             font-weight: bold;
         }
@@ -150,6 +223,7 @@ body {
 }
         .has-background-purple {
             background-color: #520f6c;
+            color: white;
         }
 
         .has-background-orange {
@@ -162,4 +236,11 @@ body {
             padding: 15px 0px;
         }
     </style>
+
+    <script>
+        function navBarToggle() {
+    document.querySelector(".navbar-burger").classList.toggle("is-active"), document.querySelector(".navbar-menu").classList.toggle("is-active")
+}
+
+    </script>
 </body>
