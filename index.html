@@ -15,61 +15,78 @@
 <body>
     <header>
 
-        <div class="columns margin-top--1">
-            <div class="column is-3 has-background-purple "  >
-                <img src="./imagens/logo.png" alt="PRO CESTA BÁSICA" width="100%">
-            </div>
-            <div class="column">
-                <button class="btn-menu is-purple button is-rounded"> Quero ser agente <br>de negócios</button>
-                <button class="btn-menu is-purple button is-rounded"> Quero ser sócio <br>desta empresa</button>
-                <button class="btn-menu is-purple button is-rounded"> Quero falar com a <br>administração</button>
-                <button class="btn-menu is-purple button is-rounded"> Quero ser cliente</button>
-                <button class="btn-menu is-purple button is-rounded"> Já sou cliente</button>
 
-
-            </div>
+    <div class="columns margin-top--1">
+        <div class="column is-2 has-background-purple ">
+            <img src="./imagens/logo.png" alt="PRO CESTA BÁSICA" width="100%">
         </div>
+
+        <div class="column  is-2 is-centered has-text-centered">
+            <button class="btn-menu is-purple button is-rounded"> Quero ser agente <br>de negócios</button>
+
+        </div>
+        <div class="column is-2 is-centered has-text-centered">
+            <button class="btn-menu is-purple button is-rounded"> Quero ser sócio <br>desta empresa</button>
+
+        </div>
+        <div class="column is-2  is-centered has-text-centered">
+            <button class="btn-menu is-purple button is-rounded"> Quero falar com a <br>administração</button>
+
+        </div>
+        <div class="column is-2  is-centered has-text-centered">
+            <button class="btn-menu is-purple button is-rounded"> Quero ser cliente</button>
+
+        </div>
+        <div class="column is-2  is-centered has-text-centered">
+            <button class="btn-menu is-purple button is-rounded"> Já sou cliente</button>
+
+
+
+        
+    </div>
+</div>
 
         <nav class="navbar is-purple" role="navigation" aria-label="main navigation">
             <div class="navbar-brand ">
-                    <a  onclick="navBarToggle()" role="button" class="navbar-burger is-purple is-active" aria-label="menu" aria-expanded="false">
+                <a onclick="navBarToggle()" role="button" class="navbar-burger is-purple is-active" aria-label="menu"
+                    aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu is-active is-purple"">
-                <div class="navbar-start is-purple"">
+            <div class="navbar-menu is-active is-purple  is-centered has-text-centered">
+                <div class="navbar-start is-purple">
                     <a class="navbar-item is-purple strong">
                         HOME
-                    </a>         
+                    </a>
                     <a class="navbar-item is-purple strong">
                         CESTA DE MERCEARIA
-                    </a>  
+                    </a>
                     <a class="navbar-item is-purple strong">
                         CESTA DE PRODUTOS DE LIMPEZA
-                    </a>  
+                    </a>
                     <a class="navbar-item is-purple strong">
                         CESTA DE HIGIENE PESSOAL
-                    </a>  
+                    </a>
                     <a class="navbar-item is-purple strong">
                         CESTA COMPLETA
-                    </a>       
-                
+                    </a>
+
                 </div>
             </div>
-            
-            
+
+
         </nav>
 
     </header>
     <section>
-        <div class="container">
+       
             <div class="columns">
                 <div class="column is-3">
                     <div class="card">
                         <div class="card-content has-text-centered sub-title-cesta">
-                            <img src="./imagens/5.jpeg" alt=""><br>
+                            <img src="./imagens/6.png" alt=""><br>
                             ECONÔMICA - LIMPEZA
                             <p>KIT - <strong> R$29,99 </strong></p>
                         </div>
@@ -132,7 +149,7 @@
                 </div>
             </div>
 
-        </div>
+        
     </section>
 
     <footer>
@@ -142,85 +159,101 @@
                     <div class="box">
                         <h4 class="h4"><strong>Contato</strong></h4>
                         <i class="fab fa-whatsapp has-text-success fa-2x"></i> (11)94844-1194
-                    </div> 
+                    </div>
                 </div>
-                
+
                 <div class="column is-4 has-text-centered">
                     <div class="box">
                         <h4 class="h4"><strong>Formas de pagamento</strong></h4>
-                  
-                    <img class="icon-pagamentos" src="./imagens/ppay-icon.png" alt="">                   
-                    <img class="icon-pagamentos" src="./imagens/caixatem.jpg" alt="">  <br>  
-                    
-                    <p>Compre a sua e pague via aplicativo <br>
-                        <span class="has-text-link strong">CAIXA TEM</span> tem ou 
-                        aplicativo da <span class="has-text-success strong">PICPAY</span></p>
-              
+
+                        <img class="icon-pagamentos" src="./imagens/ppay-icon.png" alt="">
+                        <img class="icon-pagamentos" src="./imagens/caixatem.jpg" alt=""> <br>
+
+                        <p>Compre a sua e pague via aplicativo <br>
+                            <span class="has-text-link strong">CAIXA TEM</span> tem ou
+                            aplicativo da <span class="has-text-success strong">PICPAY</span></p>
+
                     </div>
                 </div>
 
                 <div class="column is-4 is-left has-text-centered">
                     <div class="box">
-                        <img src="./imagens/ajuda.jpeg" alt="">         
+                        <img src="./imagens/ajuda.jpeg" alt="">
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </footer>
 
     <style>
-        .margin-top--1{
+        .navbar-start {
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        .margin-top--1 {
             margin-top: -1rem;
         }
-        p{
+
+        p {
             font-size: 0.8rem;
         }
-        .strong{
+
+        .strong {
             font-weight: bold;
         }
+
         a.navbar-item:hover {
             background-color: #fafafa;
         }
-        .is-purple{
-            background-color: #520f6c! important;
-            color: white! important;
-            border-color: #dbdbdb00! important;
+
+        .is-purple {
+            background-color: #520f6c ! important;
+            color: white ! important;
+            border-color: #dbdbdb00 ! important;
         }
-        .is-purple:hover{
-            background-color: #77159d! important;
-            color: white! important;
-            border-color: #dbdbdb00! important;
+
+        .is-purple:hover {
+            background-color: #77159d ! important;
+            color: white ! important;
+            border-color: #dbdbdb00 ! important;
         }
-        .btn-menu{           
-            padding: 25px;       
-            font-weight: bold;  
-            font-size: 14px;   
+
+        .btn-menu {
+            padding: 25px;
+            font-weight: bold;
+            font-size: 14px;
             margin-bottom: 2px;
         }
-        .sub-title-cesta{
-            font-size: 0.7em! important;
+
+        .sub-title-cesta {
+            font-size: 0.7em ! important;
         }
-        .strong{
+
+        .strong {
             font-weight: bold;
         }
-        .icon-pagamentos{
+
+        .icon-pagamentos {
             max-width: 40px;
         }
+
         html {
-    height: 100%;
-    min-height: 100%;
-}
+            height: 100%;
+            min-height: 100%;
+        }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
 
-        footer {
-    margin-top: auto;
-}
+        /* footer {
+            margin-top: auto;
+        } */
+
         .has-background-purple {
             background-color: #520f6c;
             color: white;
@@ -239,8 +272,8 @@ body {
 
     <script>
         function navBarToggle() {
-    document.querySelector(".navbar-burger").classList.toggle("is-active"), document.querySelector(".navbar-menu").classList.toggle("is-active")
-}
+            document.querySelector(".navbar-burger").classList.toggle("is-active"), document.querySelector(".navbar-menu").classList.toggle("is-active")
+        }
 
     </script>
 </body>
