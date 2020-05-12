@@ -16,29 +16,29 @@
     <header>
 
 
-    <div class="columns margin-top--1">
-        <div class="column is-2 has-background-purple ">
+    <div class="columns">
+        <div class="column is-one-fifth has-background-purple ">
             <img src="./imagens/logo.png" alt="PRO CESTA BÁSICA" width="100%">
         </div>
 
-        <div class="column  is-2 is-centered has-text-centered">
-            <button class="btn-menu is-purple button is-rounded"> Quero ser agente <br>de negócios</button>
+        <div class="column-menu-top column is-centered has-text-centered is-purple is-new-rounded has-text-centered">
+            <div class="btn-menu-top "> Quero ser agente de negócios</div>
 
         </div>
-        <div class="column is-2 is-centered has-text-centered">
-            <button class="btn-menu is-purple button is-rounded"> Quero ser sócio <br>desta empresa</button>
+        <div class="column-menu-top column is-centered has-text-centered is-purple is-new-rounded">
+            <div class="btn-menu-top "> Quero ser sócio desta empresa</div>
 
         </div>
-        <div class="column is-2  is-centered has-text-centered">
-            <button class="btn-menu is-purple button is-rounded"> Quero falar com a <br>administração</button>
+        <div class="column-menu-top column is-centered has-text-centered is-purple is-new-rounded">
+            <div class="btn-menu-top btn"> Quero falar com a administração</div>
 
         </div>
-        <div class="column is-2  is-centered has-text-centered">
-            <button class="btn-menu is-purple button is-rounded"> Quero ser cliente</button>
+        <div class="column-menu-top column is-centered has-text-centered is-purple is-new-rounded is-vcentered">
+            <div class="btn-menu-top is-vcentered"> Quero ser cliente</div>
 
         </div>
-        <div class="column is-2  is-centered has-text-centered">
-            <button class="btn-menu is-purple button is-rounded"> Já sou cliente</button>
+        <div class="column-menu-top column is-centered has-text-centered is-purple is-new-rounded">
+            <div class="btn-menu-top "> Já sou cliente</div>
 
 
 
@@ -187,6 +187,29 @@
     </footer>
 
     <style>
+        .btn-menu-top{
+            font-size: 0.8rem;
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+        }
+        .column-menu-top {
+            margin-top: 2px;
+            margin-left: 7px;
+            margin-right: 7px;
+            vertical-align: 50%;
+            
+        }
+        .is-new-rounded {
+    border-radius: 30px;
+
+}
+        .colunas-header{
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+        }
         .navbar-start {
             flex-grow: 1;
             justify-content: center;
@@ -238,7 +261,7 @@
         .icon-pagamentos {
             max-width: 40px;
         }
-
+/* 
         html {
             height: 100%;
             min-height: 100%;
@@ -248,7 +271,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100%;
-        }
+        } */
 
         /* footer {
             margin-top: auto;
